@@ -1,0 +1,52 @@
+<!DOCTYPE html>  
+<html lang="fa">  
+<head>  
+    <meta charset="utf-8" />  
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />  
+    <link rel="stylesheet" href="css/style.css" />  
+    <title>SabzLearn | Js | 184</title>  
+</head>  
+<body>  
+    <!-- modal -->  
+    <div class="modal" id="todo_form">  
+        <div class="header">  
+            <div class="title">Add Todo</div>  
+            <button class="btn close-modal" id="close_modal">&times;</button>  
+        </div>  
+        <div class="body">  
+            <input type="text" id="todo_input" placeholder="وارد کردن کار جدید..." />  
+            <input type="submit" value="افزودن کار" id="todo_submit" />  
+        </div>  
+    </div>  
+    <!-- todo -->  
+    <div class="todo-container">  
+        <div class="status" id="no_status">  
+            <h3>بدون وضعیت</h3>  
+            <button id="add_btn" data-target-modal="#todo_form">+ افزودن کار</button>  
+            <div class="todo" draggable="true">  
+                خرید پیتزا  
+                <span class="close">&times;</span>  
+            </div>  
+            <div class="todo" draggable="true">  
+                خرید پیتزا  
+                <span class="close">&times;</span>  
+            </div>  
+            <div class="todo" draggable="true">  
+                خرید پیتزا  
+                <span class="close">&times;</span>  
+            </div>  
+        </div>  
+        <div class="status" ondrop="dropHandler(event)" ondragover="dragOverBann(event)">  
+            <h3>شروع نشده</h3>  
+        </div>  
+        <div class="status" ondrop="dropHandler(event)" ondragover="dragOverBann(event)">  
+            <h3>در حال انجام</h3>  
+        </div>  
+        <div class="status" ondrop="dropHandler(event)" ondragover="dragOverBann(event)">  
+            <h3>تکمیل شده</h3>  
+        </div>  
+    </div>  
+    <div id="overlay"></div>  
+    <script src="js/app.js"></script>  
+</body>  
+</html>
