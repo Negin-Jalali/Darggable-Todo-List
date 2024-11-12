@@ -9,7 +9,7 @@ body {
     display: flex;  
     justify-content: center;  
     align-items: center;  
-    background-color: #f0f4f8; /* رنگ پس‌زمینه روشن */  
+    background-color: #f0f4f8; /  
 }  
 
 .todo-container {  
@@ -21,45 +21,52 @@ body {
 }  
 
 .status {  
-    flex: 1 1 25%; /* برای ریسپانسیو بودن */  
-    min-width: 250px; /* حداقل عرض برای هر ستون */  
+    flex: 1 1 25%;   
+    min-width: 250px;   
     min-height: 25rem;
-    background-color: #e3f2fd; /* رنگ پس‌زمینه روشن */  
+    background-color: #e3f2fd;  
     position: relative;  
     padding: 60px 1rem 0.5rem;  
-    border-radius: 8px; /* گوشه‌های گرد */  
-    margin: 1rem; /* فاصله بین ستون‌ها */  
+    border-radius: 8px;  
+    margin: 1rem;   
 }  
 
-.status h3 {  
-    
-    position: absolute;  
-    top: 0;  
-    left: 0;  
-    background-color: #1976d2; /* رنگ عنوان */  
-    color: #fff; /* رنگ متن سفید */  
-    margin: 0;  
-    width: 100%;  
-    padding: 0.5rem 1rem;  
-    border-radius: 8px 8px 0 0; /* گوشه‌های گرد برای عنوان */  
+.status h3 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #1976d2;
+    color: #fff;
+    margin: 0;
+    width: 100%;
+    padding: 0.5rem 1rem;
+    border-radius: 8px 8px 0 0;
+    -webkit-border-radius: 8px 8px 0 0;
+    -moz-border-radius: 8px 8px 0 0;
+    -ms-border-radius: 8px 8px 0 0;
+    -o-border-radius: 8px 8px 0 0;
 }  
 
-#add_btn {  
-    padding: 0.5rem 1rem;  
-    background-color: #64b5f6; /* رنگ دکمه روشن */  
-    outline: none;  
-    border: none;  
-    width: 100%;  
-    font-size: 1.3rem;  
+#add_btn {
+    padding: 0.5rem 1rem;
+    background-color: #64b5f6;
+    outline: none;
+    border: none;
+    width: 100%;
+    font-size: 1.3rem;
     font-weight: 700;
-    margin: 0.5rem 0;  
-    border-radius: 4px;  
-    cursor: pointer;  
-    transition: background-color 0.3s; /* انیمیشن */  
+    margin: 0.5rem 0;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-out;
+    -webkit-transition: background-color 0.3s ease-out;
+    -moz-transition: background-color 0.3s ease-out;
+    -ms-transition: background-color 0.3s ease-out;
+    -o-transition: background-color 0.3s ease-out;
 }  
 
 #add_btn:hover {  
-    background-color: #42a5f5; /* رنگ دکمه در حالت hover */  
+    background-color: #42a5f5; 
 }  
 
 .todo {  
@@ -118,11 +125,11 @@ body {
     left: 50%;  
     transform: translate(-50%, -50%);  
     transition: top 0.3s ease-in-out;  
-    border: 1px solid #1976D2; /* تغییر رنگ حاشیه */  
-    border-radius: 12px; /* کمی بزرگتر نمودن گردی */  
+    border: 1px solid #1976D2;   
+    border-radius: 12px;   
     z-index: 2;  
-    background-color: #f9f9f9; /* رنگ زمینه تغییر یافته */  
-    color: #333; /* تغییر رنگ متن */  
+    background-color: #f9f9f9;   
+    color: #333;   
 }  
 
 .modal.active {  
@@ -145,7 +152,7 @@ body {
 
 .modal .body {  
     padding: 0.75rem;  
-    line-height: 1.5; /* فاصله بین خطوط */  
+    line-height: 1.5;   
 }
 
 #overlay {
@@ -181,10 +188,12 @@ body {
     color: #000000;  
     font-size: 1.25rem;  
     border: none;  
-    border-radius: 4px; /* گوشه‌های گرد */  
-    transition: background-color 0.3s; /* انیمیشن */  
+    border-radius: 4px;   
+    transition: background-color 0.3s; 
 }  
 
 #todo_submit:hover {  
-    background-color: #42a5f5; /* رنگ دکمه در حالت hover */  
+    background-color: #42a5f5; 
 }
+git remote add origin https://github.com/Negin-Jalali/Darggable-Todo-List.git
+git push -u origin main
