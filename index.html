@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="css/style.css" />  
     <title>Draggable Todolist</title>  
 </head>  
-<body>  
+<body class="">  
     <!-- modal -->  
     <div class="modal" id="todo_form">  
         <div class="header">  
@@ -19,20 +19,26 @@
         </div>  
     </div>  
     <!-- todo -->  
-    <div class="todo-container">  
+    <div class="todo-container"> 
+        <div class="mode-container">
+            <div class="switch">  
+                <div class="flicker"></div>  
+                <div class="moon"></div>  
+            </div> 
+        </div> 
         <div class="status" id="no_status">  
             <h3>بدون وضعیت</h3>  
             <button id="add_btn" data-target-modal="#todo_form">+ افزودن کار</button>  
             <div class="todo" draggable="true">  
-                خرید پیتزا  
+                تسک تست 
                 <span class="close">&times;</span>  
             </div>  
             <div class="todo" draggable="true">  
-                خرید پیتزا  
+                تسک تست 
                 <span class="close">&times;</span>  
             </div>  
             <div class="todo" draggable="true">  
-                خرید پیتزا  
+                تسک تست 
                 <span class="close">&times;</span>  
             </div>  
         </div>  

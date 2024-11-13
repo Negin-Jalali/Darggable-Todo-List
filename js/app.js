@@ -10,6 +10,8 @@ let taskSubmit = $.getElementById('todo_submit')
 let taskInput = $.getElementById('todo_input')
 let taskArea = $.getElementById('no_status')
 let closeSpan = $.querySelectorAll('.close')
+let darkToggle = $.querySelector('.mode-container')
+let flicker = $.querySelector('.flicker')
 
 
 // modal display
@@ -98,11 +100,33 @@ function taskDelete(event){
 // adding task using Enter
 taskInput.addEventListener('keyup', function(event){
     if(event.code === 'Enter'){
+        modalHide()
         if(taskInput.value != ''){
             taskMake()
-            modalHide()
             taskInput.value = ''
         }
     }
 })
 $.body.addEventListener('keyup', addTask)
+
+
+// Dark and light mode
+
+darkToggle.addEventListener('click', function(){
+
+    $.body.classList.toggle('dark');
+    if($.body.classList.contains('dark')){
+        localStorage.setItem('theme', 'dark')
+    }else{
+        localStorage.setItem('theme', 'light')
+    }
+
+})
+
+window.onload = function(){
+    let localTheme = localStorage.getItem('theme')
+    if (localTheme === 'dark'){
+        $.body.classList.add('dark')
+    }
+}
+
